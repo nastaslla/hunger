@@ -995,16 +995,6 @@ h4 {
     position: relative;
 }
 
-.slider__line {
-    width: 300vw;
-    position: absolute;
-    left: 0;
-    -webkit-transition: all 2s;
-    transition: all 2s;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
 
 .slide {
     width: 100vw;
@@ -1021,17 +1011,6 @@ h4 {
     }
 }
 
-.slider__nav {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 20px;
-}
 
 .btn-dote {
     width: 15px;
@@ -1836,4 +1815,3 @@ h4 {
     font-weight: 700;
     color: #c4c4c4;
 }
-/*# sourceMappingURL=style.css.map */
