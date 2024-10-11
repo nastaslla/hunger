@@ -1,3 +1,7 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Open+Sans:wght@400;700&display=swap');
+/* Сделать перемотку через js и анимации навигациоонные вначале
+ через CSS и :target */
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -367,6 +371,7 @@ h4 {
 .welcome__heading {
     text-transform: uppercase;
     font-size: 60px;
+    font-family: 'Arima Madurai', cursive;
     text-align: center;
 }
 
@@ -727,6 +732,7 @@ h4 {
 
 .title {
     text-transform: uppercase;
+    font-family: 'Arima Madurai', cursive;
     font-size: 30px;
     line-height: 48px;
     text-align: center;
@@ -995,6 +1001,16 @@ h4 {
     position: relative;
 }
 
+.slider__line {
+    width: 300vw;
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
 
 .slide {
     width: 100vw;
@@ -1011,6 +1027,17 @@ h4 {
     }
 }
 
+.slider__nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+}
 
 .btn-dote {
     width: 15px;
@@ -1213,6 +1240,7 @@ h4 {
     text-transform: uppercase;
     font-size: 16px;
     line-height: 18px;
+    font-family: 'Arima Madurai', cursive;
 }
 
 .menu__undertitle {
@@ -1226,6 +1254,7 @@ h4 {
     text-transform: uppercase;
     font-size: 16px;
     line-height: 18px;
+    font-family: 'Arima Madurai', cursive;
     font-weight: 700;
 }
 
@@ -1273,6 +1302,7 @@ h4 {
 }
 
 .event-card__text {
+    font-family: 'Arima Madurai', cursive;
     text-transform: uppercase;
     color: #fff;
     font-size: 24px;
@@ -1815,3 +1845,4 @@ h4 {
     font-weight: 700;
     color: #c4c4c4;
 }
+/*# sourceMappingURL=style.css.map */

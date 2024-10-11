@@ -6,10 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="viewport"
-            content="height=device-height, initial-scale=1.0"/>
+            content="height=device-height, initial-scale=1.0"
+        />
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
-
+        <link
+            rel="stylesheet"
+            href="fontawesome-free-5.15.3-web/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+            crossorigin="anonymous"
+        />
     </head>
     <body>
         <div class="welcome">
@@ -47,6 +57,11 @@
                         <a href="#team" class="header__btn">КОМАНДА</a>
                         <a href="#booking" class="header__btn">БРОНИРОВАНИЕ</a>
                     </nav>
+                    <div class="logo">
+                        <svg class="logo-icon">
+                            <use href="img/sprite.svg#logo"></use>
+                        </svg>
+                    </div>
                     <nav class="header__nav header__nav--right">
                         <a href="#menu" class="header__btn">МЕНЮ</a>
                         <a href="#galerie" class="header__btn">ГАЛЕРЕЯ</a>
@@ -62,7 +77,7 @@
             </aside>
             <div class="welcome__content">
                 <p class="welcome__underheading">РЕСТОРАН</p>
-                <h1 class="welcome__heading">голод</h1>
+                <h1 class="welcome__heading">аппетит</h1>
                 <div class="line"></div>
                 <nav class="welcome__nav">
                     <a href="#booking" class="welcome__btn welcome__btn--fill"
@@ -72,6 +87,13 @@
                         >ПОДРОБНЕЕ</a
                     >
                 </nav>
+                <div class="next-btn-wraper">
+                    <a href="#about" class="next-btn">
+                        <svg class="down-icon">
+                            <use href="img/sprite.svg#next"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
             <nav class="social-nav">
                 <a href="#" class="social-nav__btn">
@@ -100,8 +122,12 @@
                             <h2 class="title">О нас</h2>
                             <div class="line"></div>
                             <p class="undertitle">
-                                "Голод" уютный ресторан в центре города, где
+                                "Аппетит" уютный ресторан в центре города, где
                                 каждый посетитель становится частью нашей семьи.
+                                Наша история началась давно, когда наш
+                                шеф-повар, Пьер, решил создать место, где люди
+                                могли бы наслаждаться превосходной кухней в
+                                уютной атмосфере.
                             </p>
                         </header>
                         <main class="article__main">
@@ -144,7 +170,7 @@
                             <h3 class="title">Повара</h3>
                             <div class="line"></div>
                             <p class="undertitle">
-                                В ресторане "Голод" мы гордимся нашей
+                                В ресторане "Аппетит" мы гордимся нашей
                                 талантливой командой поваров, которые страстно
                                 любят создавать удивительные блюда для наших
                                 гостей.
@@ -160,7 +186,7 @@
                                 является основой хорошей кухни, поэтому наши
                                 повара тщательно выбирают самые свежие и
                                 качественные ингредиенты от проверенных
-                                поставщиков. В "Голод" каждое блюдо
+                                поставщиков. В "Аппетите" каждое блюдо
                                 приготовлено с любовью и вниманием к деталям,
                                 чтобы каждый кусочек принес вам удовольствие и
                                 радость от вкуса.
@@ -216,6 +242,10 @@
                         <div class="border"></div>
                     </div>
                 </div>
+                <p class="section__calendar">
+                    Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +7 729
+                    131 637/+7 726 458 782
+                </p>
             </section>
             <section id="galerie" class="slider">
                 <div class="slider__line">
@@ -225,6 +255,7 @@
                             background-image: url(img/backgrounds/vageteb.jpg);
                         "
                     >
+                        <h2 class="section__heading">Блюда</h2>
                         <div
                             class="container main__container main__container--reverse"
                         >
@@ -256,12 +287,117 @@
                                         Сочетание нежного теста с шоколадной
                                         начинкой делает наши панкейки идеальным
                                         выбором для любого времени суток.
+                                        Попробуйте наши шоколадные панкейки и
+                                        погрузитесь в мир сладких наслаждений!
                                     </p>
                                 </main>
                             </article>
                         </div>
                     </div>
+                    <div
+                        class="section section-img slide"
+                        style="
+                            background-image: url(img/backgrounds/vageteb.jpg);
+                        "
+                    >
+                        <h2 class="section__heading">Блюда</h2>
+                        <div
+                            class="container main__container main__container--reverse"
+                        >
+                            <div
+                                class="image-card image-card--reverse"
+                                style="
+                                    background-image: url(img/cards/meat.jpg);
+                                "
+                            >
+                                <div class="border border--reverse"></div>
+                            </div>
+                            <article class="article">
+                                <header class="article__header">
+                                    <h3 class="title">Мясо в соусе</h3>
+                                    <div class="line"></div>
+                                    <p class="undertitle">
+                                        Аромат и вкус, которые запомнятся
+                                        навсегда
+                                    </p>
+                                </header>
+                                <main class="article__main">
+                                    <p class="article__text">
+                                        Наше мясо в соусе - это вкусное
+                                        сочетание нежного мяса и ароматного
+                                        соуса, которое оставит в вас
+                                        незабываемые впечатления. Каждый кусочек
+                                        мяса пропитан вкусом нашего уникального
+                                        соуса, который придает блюду особый вкус
+                                        и аромат. Мясо тает во рту, раскрывая
+                                        все его вкусовые нюансы. Это блюдо
+                                        отлично подходит как для обеда, так и
+                                        для ужина. Сервируется с дополнительными
+                                        гарнирами по вашему выбору, чтобы
+                                        сделать ваш обед или ужин еще более
+                                        насыщенным и вкусным. Попробуйте наше
+                                        мясо в соусе и наслаждайтесь
+                                        великолепным вкусом каждого кусочка!
+                                    </p>
+                                </main>
+                            </article>
+                        </div>
+                    </div>
+                    <div
+                        class="section section-img slide"
+                        style="
+                            background-image: url(img/backgrounds/vageteb.jpg);
+                        "
+                    >
+                        <h2 class="section__heading">Блюда</h2>
+                        <div
+                            class="container main__container main__container--reverse"
+                        >
+                            <div
+                                class="image-card image-card--reverse"
+                                style="
+                                    background-image: url(img/cards/burger.jpg);
+                                "
+                            >
+                                <div class="border border--reverse"></div>
+                            </div>
+                            <article class="article">
+                                <header class="article__header">
+                                    <h3 class="title">Гамбургер</h3>
+                                    <div class="line"></div>
+                                    <p class="undertitle">
+                                        Настоящий вкус домашнего уюта
+                                    </p>
+                                </header>
+                                <main class="article__main">
+                                    <p class="article__text">
+                                        Наш гамбургер - это истинное воплощение
+                                        классического вкуса, который вызывает
+                                        ассоциации с домашним теплом и уютом.
+                                        Каждый гамбургер приготовлен с любовью и
+                                        заботой о качестве ингредиентов. Мы
+                                        используем только свежее мясо, нежные
+                                        булочки и свежие овощи, чтобы обеспечить
+                                        вам наилучший вкус и питательность. Наш
+                                        гамбургер - это не просто блюдо, это
+                                        наша фирменная гордость. Он станет
+                                        прекрасным выбором для тех, кто ценит
+                                        качественную еду и желает насладиться
+                                        неповторимым вкусом. Попробуйте наш
+                                        гамбургер и погрузитесь в атмосферу
+                                        домашнего уюта и вкуса!
+                                    </p>
+                                </main>
+                            </article>
+                        </div>
+                    </div>
+                </div>
 
+                <nav class="slider__nav">
+                    <a id="slide1" class="btn-dote active" data-dote="1"></a>
+                    <a id="slide2" class="btn-dote" data-dote="2"></a>
+                    <a id="slide3" class="btn-dote" data-dote="3"></a>
+                </nav>
             </section>
             <section id="menu" class="section-menu">
                 <div class="container section-menu__container">
@@ -269,7 +405,7 @@
                         <h3 class="title">Вкуснейшее меню</h3>
                         <div class="line"></div>
                         <p class="undertitle">
-                            Ресторан "Голод" рад предложить вам уникальное
+                            Ресторан "Аппетит" рад предложить вам уникальное
                             меню, составленное с любовью к кулинарии и вниманием
                             к вашим вкусовым предпочтениям.
                         </p>
@@ -282,6 +418,7 @@
                         <a class="menu-nav__btn" data-btn="pasta">Паста</a>
                         <a class="menu-nav__btn" data-btn="desert">Десерты</a>
                         <a class="menu-nav__btn" data-btn="wine">Вино</a>
+                        <a class="menu-nav__btn" data-btn="beer">Пиво</a>
                         <a class="menu-nav__btn" data-btn="drinks">Напитки</a>
                     </nav>
                     <div class="menu hide" data-place="soupe">
@@ -1449,6 +1586,239 @@
                             <p class="menu__cost">1200 ₽</p>
                         </div>
                     </div>
+                    <div class="menu hide" data-place="beer">
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__desc">
+                                <h4 class="menu__title">
+                                    Пиво нефильтрованное ....
+                                </h4>
+                                <p class="menu__undertitle">
+                                    Кастумное пиво прямиком их нашей пивоварни
+                                </p>
+                            </div>
+                            <p class="menu__cost">800 ₽</p>
+                        </div>
+                    </div>
                     <div class="menu hide" data-place="drinks">
                         <div class="menu__item">
                             <div class="menu__desc">
@@ -1713,7 +2083,10 @@
                         </div>
                     </div>
                 </div>
-
+                <p class="section__calendar">
+                    Для частных мероприятий, пожалуйста, звоните по номеру: +7
+                    729 131 637/+7 726 458 782 или используйте контактную форму.
+                </p>
             </section>
 
             <div class="grid">
@@ -1768,7 +2141,24 @@
                             class="input input-messege"
                             placeholder="Сообщение"
                         />
-                       
+                        <div class="contact-area">
+                            <p class="contact-area__item">
+                                <i
+                                    class="fas fa-map-marker-alt contact-area__icon"
+                                ></i
+                                >Ул. Пушкина, д. 10, г. Москва, Россия
+                            </p>
+                            <p class="contact-area__item">
+                                <i class="fas fa-phone contact-area__icon"></i
+                                >+7 729 131 637/+7 726 458 782
+                            </p>
+                            <p class="contact-area__item">
+                                <i
+                                    class="fas fa-envelope contact-area__icon"
+                                ></i
+                                >office@mindblister.com
+                            </p>
+                        </div>
                         <button class="btn-area">
                             <span type="submit" class="submit-btn">
                                 Забронировать
@@ -1777,11 +2167,18 @@
                     </form>
                 </div>
             </section>
+
+            <div class="map" id="yandexmap"></div>
         </main>
 
         <footer class="footer">
             <p>© Copyright Hunger 2024</p>
         </footer>
+
+        <script
+            src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+            type="text/javascript"
+        ></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
         <script src="Scripts/nav.js"></script>
         <script src="Scripts/filter.js"></script>
